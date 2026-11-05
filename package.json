@@ -1,0 +1,26 @@
+{
+  "name": "modular-web-app",
+  "version": "1.0.0",
+  "description": "Clean modular frontend template with HTML, CSS, JS, TS, and Tailwind CSS",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev:ts": "tsc --watch",
+    "dev:tailwind": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
+    "build:ts": "tsc",
+    "build:tailwind": "npx tailwindcss -i ./style.css -o ./dist/output.css --minify",
+    "build": "npm run build:ts && npm run build:tailwind"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}

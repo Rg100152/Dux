@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Web App</title>
+
+  <!-- Tailwind CSS (via CDN for quick testing, or compiled dist/output.css) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans antialiased">
+
+  <!-- Header / Navbar -->
+  <header class="w-full border-b border-slate-800 bg-slate-950/60 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="h-3 w-3 rounded-full bg-emerald-500 animate-pulse"></span>
+        <h1 class="text-xl font-bold tracking-tight text-white">DevWorkspace</h1>
+      </div>
+      <nav class="flex items-center gap-6 text-sm text-slate-400">
+        <a href="#features" class="hover:text-emerald-400 transition-colors">Features</a>
+        <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
+        <a href="#docs" class="hover:text-emerald-400 transition-colors">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-12 flex flex-col items-center justify-center text-center">
+    
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-800 bg-slate-800/40 text-xs text-slate-400 mb-6">
+      <span>🚀 Ready for Dev</span>
+    </div>
+
+    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+      Modular & Fast <span class="text-emerald-400">Web App</span>
+    </h2>
+
+    <p class="max-w-xl text-slate-400 mb-8 leading-relaxed">
+      HTML, CSS, JavaScript, aur TypeScript ke sath build kiya gaya lightweight, scalable frontend template.
+    </p>
+
+    <div class="flex flex-wrap gap-4 justify-center">
+      <button id="actionBtn" class="px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium shadow-lg shadow-emerald-950 transition-all active:scale-95">
+        Click to Interact
+      </button>
+      <button class="px-5 py-2.5 rounded-lg border border-slate-700 bg-slate-800/60 hover:bg-slate-800 text-slate-200 font-medium transition-all">
+        View Readme
+      </button>
+    </div>
+
+    <!-- Dynamic Output Area -->
+    <div id="outputCard" class="mt-10 p-4 w-full max-w-md rounded-xl border border-slate-800 bg-slate-950/40 text-slate-400 text-sm hidden">
+      <p id="responseText">Output will appear here...</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+    <p>&copy; 2026 Modular Web Project. Built with Clean Code.</p>
+  </footer>
+
+  <!-- Script Files -->
+  <script src="./app.js"></script>
+</body>
+</html>
